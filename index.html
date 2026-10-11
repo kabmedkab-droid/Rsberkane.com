@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site du club RS Berkane : actualités, équipe, calendrier et résultats.">
+  <meta name="theme-color" content="#f47721">
+  <title>RS Berkane | Site du club</title>
+  <style>
+    :root{--orange:#f47721;--orange2:#ff963f;--ink:#111318;--muted:#aeb4bd;--panel:#191c22;--line:#2b3038;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#101216;color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(16,18,22,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}
+    .crest{display:grid;place-items:center;width:46px;height:52px;background:linear-gradient(145deg,var(--orange2),var(--orange));color:#171717;font-weight:1000;clip-path:polygon(50% 0,100% 15%,92% 75%,50% 100%,8% 75%,0 15%);font-size:14px}
+    nav{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:#e7e7e7}nav a:hover{color:var(--orange2)}
+    .hero{position:relative;overflow:hidden;padding:88px 0 76px;background:radial-gradient(ellipse at 78% 28%,rgba(244,119,33,.25),transparent 35%),linear-gradient(120deg,#16191e,#101216 62%)}
+    .hero:after{content:"RSB";position:absolute;right:-1%;bottom:-105px;font-size:clamp(170px,31vw,390px);font-weight:1000;color:rgba(255,255,255,.035);line-height:1;pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;position:relative;z-index:1}
+    .eyebrow{color:var(--orange2);text-transform:uppercase;font-size:12px;letter-spacing:3px;font-weight:800}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.03;margin:16px 0}.hero h1 span{color:var(--orange)}
+    .hero p{color:#c1c6ce;max-width:570px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:5px;background:var(--orange);color:#171717;font-weight:800;border:1px solid var(--orange);transition:.2s}.btn:hover{transform:translateY(-2px);background:var(--orange2)}.btn.secondary{background:transparent;color:#fff;border-color:#555b64}
+    .hero-card{background:linear-gradient(150deg,#22262e,#15171c);border:1px solid #333944;border-radius:16px;padding:26px;text-align:center;box-shadow:0 20px 60px #0005}.hero-card .crest{width:108px;height:122px;font-size:28px;margin:0 auto 15px}.hero-card h2{margin:8px 0 0;font-size:24px}.hero-card small{color:var(--muted)}
+    section{padding:68px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}.section-head h2{font-size:clamp(27px,4vw,38px);margin:4px 0 0;line-height:1.15}.section-head p{color:var(--muted);margin:0;max-width:430px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}.card-body{padding:20px}.card h3{margin:5px 0 8px}.card p{color:#b8bec7;margin:0}.placeholder{height:155px;display:grid;place-items:center;background:linear-gradient(135deg,#2b3038,#1b1f25);color:var(--orange2);font-size:42px}
+    .tag{font-size:11px;color:var(--orange2);font-weight:900;letter-spacing:1.6px;text-transform:uppercase}
+    .match-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px}.match-box{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:10px}.match-box h3{margin-top:0}.match{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;border-top:1px solid var(--line)}.team{font-weight:800}.vs{color:var(--orange2);font-size:12px;font-weight:900}.note{font-size:12px;color:var(--muted)}
+    .squad{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.player{padding:20px 14px;text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:10px}.shirt{width:72px;height:78px;margin:0 auto 12px;display:grid;place-items:center;color:#111;background:linear-gradient(135deg,var(--orange2),var(--orange));clip-path:polygon(22% 0,39% 9%,61% 9%,78% 0,100% 20%,83% 39%,75% 29%,75% 100%,25% 100%,25% 29%,17% 39%,0 20%);font-weight:1000;font-size:22px}.player strong{display:block}.player span{color:var(--muted);font-size:13px}
+    .cta{padding:34px;border-radius:12px;background:linear-gradient(110deg,#f47721,#ff963f);color:#151515;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{margin:0;font-size:clamp(25px,4vw,36px)}.cta p{margin:5px 0 0}.cta .btn{background:#151515;color:#fff;border-color:#151515;white-space:nowrap}
+    footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:760px){.nav{padding:12px 0;align-items:flex-start;flex-direction:column}.hero{padding:58px 0}.hero-grid,.match-layout{grid-template-columns:1fr}.hero-card{max-width:360px;margin:auto}.cards{grid-template-columns:1fr}.squad{grid-template-columns:repeat(2,1fr)}section{padding:48px 0}.section-head{align-items:flex-start;flex-direction:column}.cta{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#accueil"><span class="crest">RSB</span><span>RS BERKANE<br><small style="color:#aeb4bd;font-weight:500">SITE DU CLUB</small></span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#actualites">Actualités</a><a href="#equipe">Équipe</a><a href="#matchs">Matchs</a><a href="#club">Le club</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="accueil">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Fierté • Passion • Berkane</div>
+        <h1>ENSEMBLE,<br><span>PLUS FORTS.</span></h1>
+        <p>Bienvenue sur l’espace web de la RS Berkane. Retrouvez ici les actualités du club, les informations de l’équipe et les prochains rendez-vous.</p>
+        <div class="actions"><a class="btn" href="#matchs">Voir les matchs</a><a class="btn secondary" href="#equipe">Découvrir l’équipe</a></div>
+      </div>
+      <div class="hero-card">
+        <div class="crest">RSB</div>
+        <div class="eyebrow">Notre club • Notre fierté</div>
+        <h2>RS BERKANE</h2>
+        <small>Site officiel à personnaliser</small>
+      </div>
+    </div>
+  </section>
+  <section id="actualites">
+    <div class="container">
+      <div class="section-head"><div><div class="eyebrow">À la une</div><h2>Actualités du club</h2></div><p>Remplacez ces exemples par les dernières nouvelles, communiqués et comptes rendus du club.</p></div>
+      <div class="cards">
+        <article class="card"><div class="placeholder">⚽</div><div class="card-body"><div class="tag">Vie du club</div><h3>Bienvenue sur le site de la RS Berkane</h3><p>Un nouvel espace pour suivre la vie du club et partager notre passion du football.</p></div></article>
+        <article class="card"><div class="placeholder">🏆</div><div class="card-body"><div class="tag">Compétition</div><h3>Suivez la saison avec nous</h3><p>Ajoutez ici les résultats, les annonces de matchs et les informations de compétition.</p></div></article>
+        <article class="card"><div class="placeholder">🧡</div><div class="card-body"><div class="tag">Communauté</div><h3>La passion de Berkane</h3><p>Partagez les moments forts du club avec les supporters et toute la communauté.</p></div></article>
+      </div>
+    </div>
+  </section>
+  <section id="matchs" style="background:#15181d">
+    <div class="container">
+      <div class="section-head"><div><div class="eyebrow">Calendrier</div><h2>Matchs & résultats</h2></div><p>Les informations ci-dessous sont des exemples. Mettez-les à jour avant publication.</p></div>
+      <div class="match-layout">
+        <div class="match-box"><h3>Prochain match</h3><div class="match"><div class="team">RS Berkane</div><div class="vs">VS</div><div class="team">Adversaire</div></div><p class="note">Date : à confirmer · Heure : à confirmer · Stade : à confirmer</p></div>
+        <div class="match-box"><h3>Dernier résultat</h3><div class="match"><div class="team">RS Berkane</div><div class="vs">— : —</div><div class="team">Adversaire</div></div><p class="note">Résultat à ajouter après le match.</p></div>
+      </div>
+    </div>
+  </section>
+  <section id="equipe">
+    <div class="container">
+      <div class="section-head"><div><div class="eyebrow">Effectif</div><h2>L’équipe</h2></div><p>Exemples de fiches à remplacer par les joueurs confirmés et les informations autorisées par le club.</p></div>
+      <div class="squad">
+        <div class="player"><div class="shirt">01</div><strong>Gardien</strong><span>Nom du joueur</span></div>
+        <div class="player"><div class="shirt">04</div><strong>Défenseur</strong><span>Nom du joueur</span></div>
+        <div class="player"><div class="shirt">08</div><strong>Milieu</strong><span>Nom du joueur</span></div>
+        <div class="player"><div class="shirt">09</div><strong>Attaquant</strong><span>Nom du joueur</span></div>
+      </div>
+    </div>
+  </section>
+  <section id="club" style="background:#15181d">
+    <div class="container">
+      <div class="section-head"><div><div class="eyebrow">Notre identité</div><h2>Le club, au cœur de Berkane</h2></div></div>
+      <p style="max-width:760px;color:#c1c6ce;font-size:17px">Cette section peut présenter l’histoire du club, ses valeurs, son stade, son centre de formation et ses partenaires. Ajoutez les informations vérifiées et les visuels officiels que vous êtes autorisé à utiliser.</p>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container"><div class="cta"><div><h2>Vivez la passion RS Berkane.</h2><p>Suivez les actualités et restez proches du club.</p></div><a class="btn" href="mailto:contact@rsberkane.com">Nous contacter</a></div><p class="note" style="margin-top:12px">Important : remplacez l’adresse e-mail ci-dessus par une adresse qui fonctionne avant de publier.</p></div>
+  </section>
+</main>
+<footer><div class="container foot"><span>© <span id="year"></span> RS Berkane — Site de supporters / modèle à personnaliser.</span><span>Fait avec passion 🧡</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
