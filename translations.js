@@ -12,7 +12,7 @@ window.RSB_TRANSLATIONS = {
     continental:"AFRIQUE", national:"MAROC", confedTitle:"Coupe de la Confédération CAF", superTitle:"Supercoupe d’Afrique", throneTitle:"Coupe du Trône", botolaTitle:"Botola Pro",
     honoursNote:"Les années et le nombre de titres sont présentés selon les informations fournies pour ce site.",
     squadEyebrow:"LES HOMMES DU TERRAIN", squadTitle:"Notre onze <em>de départ.</em>", squadIntro:"Une composition illustrative en 4-2-4 avec les joueurs et photos fournis.",
-    formation:"FORMATION · 1–4–2–4", forward:"Attaquant", midfielder:"Milieu", defender:"Défenseur", goalkeeper:"Gardien",
+    formation:"FORMATION · 2–4–4", forward:"Attaquant", midfielder:"Milieu", defender:"Défenseur", goalkeeper:"Gardien",
     squadNote:"Les noms, numéros et la disposition sont illustratifs et peuvent être modifiés dans index.html.",
     matchEyebrow:"À VOS AGENDAS", matchTitle:"Le prochain <em>rendez-vous.</em>", competition:"BOTOLA PRO · JOURNÉE 4",
     home:"À domicile", away:"À l’extérieur", zemmamra:"Renaissance Zemamra", match:"MATCH",
