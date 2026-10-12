@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f36b16">
+  <meta name="description" content="Profil du joueur Chouiar de la Renaissance Sportive de Berkane.">
+  <title>Chouiar — RS Berkane</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-player="Chouiar">
+  <div class="top-strip"></div>
+  <header class="site-header">
+    <a class="brand" href="../index.html#accueil" aria-label="RS Berkane accueil">
+      <img src="../images/rsb.png" alt="Logo de la Renaissance Sportive de Berkane" class="brand-logo" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}">
+      <span><strong>RS BERKANE</strong><small data-i18n="brandSub">La passion orange</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="../index.html#club" data-i18n="navClub">Le club</a>
+      <a href="../index.html#palmares" data-i18n="navHonours">Palmarès</a>
+      <a href="../index.html#effectif" data-i18n="navSquad">Onze de départ</a>
+      <a href="../index.html#match" data-i18n="navMatch">Prochain match</a>
+      <div class="language-switch" aria-label="Choisir la langue">
+        <button data-lang="fr" class="lang-btn active">FR</button>
+        <button data-lang="en" class="lang-btn">EN</button>
+        <button data-lang="ar" class="lang-btn">ع</button>
+      </div>
+    </nav>
+  </header>
+  <main class="profile-main">
+    <a class="profile-back" href="../index.html#effectif">← <span data-i18n="backToSquad">Retour à l’effectif</span></a>
+    <article class="profile-card">
+      <div class="profile-portrait"><img src="../images/chouiar.jpeg" alt="Chouiar" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"></div>
+      <div class="profile-copy">
+        <span class="eyebrow" data-i18n="profileEyebrow">FICHE JOUEUR</span>
+        <h1>Chouiar</h1>
+        <p data-i18n="profileIntro">Découvrez le profil du joueur.</p>
+        <span class="profile-position" data-i18n="forward">Attaquant</span>
+        <h2 data-i18n="profileBioTitle">Présentation</h2>
+        <p data-i18n="profileBioText">Cette fiche est prête à accueillir une biographie vérifiée : parcours, qualités sur le terrain et moments marquants. Les informations détaillées seront ajoutées lorsqu’elles auront été confirmées.</p>
+        <h2 data-i18n="profileDetailsTitle">Informations</h2>
+        <div class="profile-details">
+          <div class="profile-detail"><small data-i18n="profilePositionLabel">Poste</small><strong data-i18n="forward">Attaquant</strong></div>
+          <div class="profile-detail"><small data-i18n="profileNumberLabel">Numéro affiché</small><strong>11*</strong></div>
+          <div class="profile-detail"><small data-i18n="profileNationalityLabel">Nationalité</small><strong data-i18n="profileNationalityValue">À compléter</strong></div>
+        </div>
+        <p class="profile-note" data-i18n="profileDetailsPending">Les statistiques et le parcours sont à compléter à partir de sources fiables.</p>
+        <a class="btn btn-primary" href="../index.html#effectif" data-i18n="backToSquad">Retour à l’effectif</a>
+        <p class="profile-note">* <span data-i18n="squadNote">Les noms, numéros et la disposition sont illustratifs et peuvent être modifiés dans index.html.</span></p>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <a class="footer-brand" href="../index.html#accueil"><img src="../images/rsb.png" alt="" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><strong>RS BERKANE</strong></a>
+    <p data-i18n="footerText">Orange dans le cœur. Berkane pour toujours.</p>
+    <span>© <span id="year"></span> RS Berkane · <span data-i18n="fanSite">Site de présentation non officiel</span></span>
+  </footer>
+  <script src="../translations.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
