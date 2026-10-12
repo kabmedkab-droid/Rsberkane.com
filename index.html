@@ -12,7 +12,7 @@
   <div class="top-strip"></div>
   <header class="site-header">
     <a class="brand" href="#accueil" aria-label="RS Berkane accueil">
-      <img src="images/rsb.png" alt="Logo de la Renaissance Sportive de Berkane" class="brand-logo" onerror="this.classList.add('missing-image')">
+      <img src="images/rsb.png" alt="Logo de la Renaissance Sportive de Berkane" class="brand-logo" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}">
       <span><strong>RS BERKANE</strong><small data-i18n="brandSub">La passion orange</small></span>
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="club-emblem-card">
-          <div class="emblem-ring"><img src="images/rsb.png" alt="Emblème RSB" onerror="this.classList.add('missing-image')"></div>
+          <div class="emblem-ring"><img src="images/rsb.png" alt="Emblème RSB" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"></div>
           <span data-i18n="emblemCaption">RENAISSANCE SPORTIVE DE BERKANE</span>
           <small>EST. 1938</small>
         </div>
@@ -81,19 +81,19 @@
       </div>
       <div class="trophy-grid">
         <article class="trophy-card">
-          <div class="trophy-image"><img src="images/confed.jpeg" alt="Trophées de la Coupe de la Confédération CAF" onerror="this.classList.add('missing-image')"><span class="trophy-count">03</span></div>
+          <div class="trophy-image"><img src="images/confed.jpeg" alt="Trophées de la Coupe de la Confédération CAF" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span class="trophy-count">03</span></div>
           <div class="trophy-info"><span class="trophy-kicker" data-i18n="continental">AFRIQUE</span><h3 data-i18n="confedTitle">Coupe de la Confédération CAF</h3><p>2020 · 2022 · 2025</p></div>
         </article>
         <article class="trophy-card">
-          <div class="trophy-image"><img src="images/Sca.jpeg" alt="Trophée de la Supercoupe d’Afrique" onerror="this.classList.add('missing-image')"><span class="trophy-count">01</span></div>
+          <div class="trophy-image"><img src="images/Sca.jpeg" alt="Trophée de la Supercoupe d’Afrique" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span class="trophy-count">01</span></div>
           <div class="trophy-info"><span class="trophy-kicker" data-i18n="continental">AFRIQUE</span><h3 data-i18n="superTitle">Supercoupe d’Afrique</h3><p>2022</p></div>
         </article>
         <article class="trophy-card">
-          <div class="trophy-image"><img src="images/cdt.jpeg" alt="Trophées de la Coupe du Trône du Maroc" onerror="this.classList.add('missing-image')"><span class="trophy-count">03</span></div>
+          <div class="trophy-image"><img src="images/cdt.jpeg" alt="Trophées de la Coupe du Trône du Maroc" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span class="trophy-count">03</span></div>
           <div class="trophy-info"><span class="trophy-kicker" data-i18n="national">MAROC</span><h3 data-i18n="throneTitle">Coupe du Trône</h3><p>2018 · 2021 · 2022</p></div>
         </article>
         <article class="trophy-card">
-          <div class="trophy-image"><img src="images/botola.jpeg" alt="Trophée de la Botola Pro" onerror="this.classList.add('missing-image')"><span class="trophy-count">01</span></div>
+          <div class="trophy-image"><img src="images/botola.jpeg" alt="Trophée de la Botola Pro" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span class="trophy-count">01</span></div>
           <div class="trophy-info"><span class="trophy-kicker" data-i18n="national">MAROC</span><h3 data-i18n="botolaTitle">Botola Pro</h3><p>2025</p></div>
         </article>
       </div>
@@ -111,23 +111,23 @@
         <div class="pitch">
           <div class="pitch-line halfway"></div><div class="center-circle"></div><div class="penalty-box top-box"></div><div class="penalty-box bottom-box"></div>
           <div class="player-row attackers">
-            <div class="player"><div class="player-photo"><img src="images/chouiar.jpeg" alt="Chouiar" onerror="this.classList.add('missing-image')"><span>11</span></div><strong>Chouiar</strong><small data-i18n="forward">Attaquant</small></div>
-            <div class="player"><div class="player-photo"><img src="images/essahel.jpeg" alt="Essahel" onerror="this.classList.add('missing-image')"><span>9</span></div><strong>Essahel</strong><small data-i18n="forward">Attaquant</small></div>
-            <div class="player"><div class="player-photo"><img src="images/mendes.jpeg" alt="Mendes" onerror="this.classList.add('missing-image')"><span>7</span></div><strong>Mendes</strong><small data-i18n="forward">Attaquant</small></div>
-            <div class="player"><div class="player-photo"><img src="images/mlioui.jpeg" alt="Mlioui" onerror="this.classList.add('missing-image')"><span>10</span></div><strong>Mlioui</strong><small data-i18n="forward">Attaquant</small></div>
+            <a class="player player-link" href="players/chouiar.html" aria-label="Chouiar - player profile"><div class="player-photo"><img src="images/chouiar.jpeg" alt="Chouiar" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>11</span></div><strong>Chouiar</strong><small data-i18n="forward">Attaquant</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
+            <a class="player player-link" href="players/essahel.html" aria-label="Essahel - player profile"><div class="player-photo"><img src="images/essahel.jpeg" alt="Essahel" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>9</span></div><strong>Essahel</strong><small data-i18n="forward">Attaquant</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
+            <a class="player player-link" href="players/mendes.html" aria-label="Mendes - player profile"><div class="player-photo"><img src="images/mendes.jpeg" alt="Mendes" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>7</span></div><strong>Mendes</strong><small data-i18n="forward">Attaquant</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
+            <a class="player player-link" href="players/mlioui.html" aria-label="Mlioui - player profile"><div class="player-photo"><img src="images/mlioui.jpeg" alt="Mlioui" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>10</span></div><strong>Mlioui</strong><small data-i18n="forward">Attaquant</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
           </div>
           <div class="player-row midfielders">
-            <div class="player"><div class="player-photo"><img src="images/labhiri.jpeg" alt="Labhiri" onerror="this.classList.add('missing-image')"><span>8</span></div><strong>Labhiri</strong><small data-i18n="midfielder">Milieu</small></div>
-            <div class="player"><div class="player-photo"><img src="images/bennasser.jpeg" alt="Bennasser" onerror="this.classList.add('missing-image')"><span>6</span></div><strong>Bennasser</strong><small data-i18n="midfielder">Milieu</small></div>
+            <a class="player player-link" href="players/labhiri.html" aria-label="Labhiri - player profile"><div class="player-photo"><img src="images/labhiri.jpeg" alt="Labhiri" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>8</span></div><strong>Labhiri</strong><small data-i18n="midfielder">Milieu</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
+            <a class="player player-link" href="players/bennasser.html" aria-label="Bennasser - player profile"><div class="player-photo"><img src="images/bennasser.jpeg" alt="Bennasser" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>6</span></div><strong>Bennasser</strong><small data-i18n="midfielder">Milieu</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
           </div>
           <div class="player-row defenders">
-            <div class="player"><div class="player-photo"><img src="images/hamza.jpeg" alt="Hamza" onerror="this.classList.add('missing-image')"><span>2</span></div><strong>Hamza</strong><small data-i18n="defender">Défenseur</small></div>
-            <div class="player"><div class="player-photo"><img src="images/haddadi.jpeg" alt="Haddadi" onerror="this.classList.add('missing-image')"><span>3</span></div><strong>Haddadi</strong><small data-i18n="defender">Défenseur</small></div>
-            <div class="player"><div class="player-photo"><img src="images/kandous.jpeg" alt="Kandous" onerror="this.classList.add('missing-image')"><span>4</span></div><strong>Kandous</strong><small data-i18n="defender">Défenseur</small></div>
-            <div class="player"><div class="player-photo"><img src="images/harkas.jpeg" alt="Harkas" onerror="this.classList.add('missing-image')"><span>5</span></div><strong>Harkas</strong><small data-i18n="defender">Défenseur</small></div>
+            <a class="player player-link" href="players/hamza.html" aria-label="Hamza - player profile"><div class="player-photo"><img src="images/hamza.jpeg" alt="Hamza" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>2</span></div><strong>Hamza</strong><small data-i18n="defender">Défenseur</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
+            <a class="player player-link" href="players/haddadi.html" aria-label="Haddadi - player profile"><div class="player-photo"><img src="images/haddadi.jpeg" alt="Haddadi" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>3</span></div><strong>Haddadi</strong><small data-i18n="defender">Défenseur</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
+            <a class="player player-link" href="players/kandous.html" aria-label="Kandous - player profile"><div class="player-photo"><img src="images/kandous.jpeg" alt="Kandous" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>4</span></div><strong>Kandous</strong><small data-i18n="defender">Défenseur</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
+            <a class="player player-link" href="players/harkas.html" aria-label="Harkas - player profile"><div class="player-photo"><img src="images/harkas.jpeg" alt="Harkas" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>5</span></div><strong>Harkas</strong><small data-i18n="defender">Défenseur</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
           </div>
           <div class="player-row goalkeeper">
-            <div class="player"><div class="player-photo"><img src="images/mounir.jpeg" alt="Mounir" onerror="this.classList.add('missing-image')"><span>1</span></div><strong>Mounir</strong><small data-i18n="goalkeeper">Gardien</small></div>
+            <a class="player player-link" href="players/mounir.html" aria-label="Mounir - player profile"><div class="player-photo"><img src="images/mounir.jpeg" alt="Mounir" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><span>1</span></div><strong>Mounir</strong><small data-i18n="goalkeeper">Gardien</small><span class="player-more" data-i18n="profileLink">Voir le profil</span></a>
           </div>
         </div>
       </div>
@@ -144,12 +144,12 @@
         <div class="competition" data-i18n="competition">BOTOLA PRO · JOURNÉE 4</div>
         <div class="teams">
           <div class="team">
-            <img src="images/rsb.png" alt="RS Berkane" onerror="this.classList.add('missing-image')">
+            <img src="images/rsb.png" alt="RS Berkane" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}">
             <strong>RS Berkane</strong><small data-i18n="home">À domicile</small>
           </div>
           <div class="match-vs"><span>VS</span><small data-i18n="match">MATCH</small></div>
           <div class="team">
-            <img src="images/zemmamra.jpeg" alt="Renaissance Zemamra" onerror="this.classList.add('missing-image')">
+            <img src="images/zemmamra.jpeg" alt="Renaissance Zemamra" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}">
             <strong data-i18n="zemmamra">Renaissance Zemamra</strong><small data-i18n="away">À l’extérieur</small>
           </div>
         </div>
@@ -165,7 +165,7 @@
   </main>
 
   <footer class="site-footer">
-    <a class="footer-brand" href="#accueil"><img src="images/rsb.png" alt="" onerror="this.classList.add('missing-image')"><strong>RS BERKANE</strong></a>
+    <a class="footer-brand" href="#accueil"><img src="images/rsb.png" alt="" onerror="if(!this.dataset.triedFallback){this.dataset.triedFallback='1';this.src=this.src.replace('/images/','/')}else{this.classList.add('missing-image')}"><strong>RS BERKANE</strong></a>
     <p data-i18n="footerText">Orange dans le cœur. Berkane pour toujours.</p>
     <span>© <span id="year"></span> RS Berkane · <span data-i18n="fanSite">Site de présentation non officiel</span></span>
   </footer>

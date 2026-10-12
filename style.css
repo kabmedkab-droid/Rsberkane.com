@@ -169,3 +169,29 @@ h1 em,h2 em{font-style:normal;color:var(--orange)}
  [dir="rtl"] .hero{padding-right:24px;padding-left:24px}
 }
 @media(max-width:380px){.trophy-grid{grid-template-columns:1fr}.trophy-image{height:210px}.club-stats{gap:9px}.club-stats span{font-size:9px}.player{width:63px}.player-photo{width:45px;height:45px}}
+
+
+/* Clickable player cards and player profile pages */
+.player-link{cursor:pointer;text-decoration:none;transition:transform .2s ease,filter .2s ease;border-radius:8px;padding:5px 3px}
+.player-link:hover,.player-link:focus-visible{transform:translateY(-4px);filter:brightness(1.08);outline:2px solid var(--orange);outline-offset:3px}
+.player-more{font-size:9px;font-weight:800;color:#ffd0b3;margin-top:5px;text-decoration:underline;text-underline-offset:3px}
+.profile-main{min-height:70vh;padding:64px clamp(20px,8vw,110px) 90px;background:var(--cream)}
+.profile-back{display:inline-flex;align-items:center;gap:9px;margin-bottom:28px;color:var(--orange-dark);font-size:12px;font-weight:800}
+.profile-card{max-width:980px;margin:0 auto;background:#fff;display:grid;grid-template-columns:minmax(240px,.8fr) 1.2fr;box-shadow:0 18px 55px #21170f12;border-top:5px solid var(--orange);overflow:hidden}
+.profile-portrait{min-height:420px;background:linear-gradient(145deg,#191919,#3c210f);display:flex;align-items:center;justify-content:center;padding:28px;position:relative}
+.profile-portrait:before{content:"RSB";position:absolute;font:700 100px Oswald,sans-serif;color:#ffffff0d;transform:rotate(-90deg);left:-7px;top:35%}
+.profile-portrait img{position:relative;width:min(100%,340px);height:360px;object-fit:cover;object-position:center top;border:4px solid var(--orange);box-shadow:0 12px 35px #0005}
+.profile-copy{padding:clamp(25px,5vw,52px)}
+.profile-copy h1{font-size:clamp(38px,5vw,58px);margin:0 0 12px;color:var(--ink)}
+.profile-copy .eyebrow{margin-bottom:10px}
+.profile-position{display:inline-block;background:#fff0e6;color:var(--orange-dark);padding:7px 12px;font-size:11px;font-weight:800;border-radius:3px;margin-bottom:26px}
+.profile-copy h2{font-size:23px;margin:16px 0 12px}
+.profile-copy p{font-size:14px;color:#666}
+.profile-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:22px 0}
+.profile-detail{background:#f7f4ef;padding:14px}
+.profile-detail small{display:block;color:#777;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+.profile-detail strong{font-size:13px}
+.profile-note{font-size:11px!important;border-top:1px solid var(--line);padding-top:15px}
+[dir="rtl"] .profile-card{direction:rtl}
+[dir="rtl"] .profile-portrait:before{left:auto;right:-7px}
+@media(max-width:650px){.profile-card{grid-template-columns:1fr}.profile-portrait{min-height:300px}.profile-portrait img{height:280px;max-width:260px}.profile-copy{padding:26px}.profile-main{padding-top:35px}.profile-details{grid-template-columns:1fr 1fr}}

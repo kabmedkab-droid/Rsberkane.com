@@ -19,7 +19,8 @@ window.RSB_TRANSLATIONS = {
     dateLabel:"DATE", matchDate:"Mardi 13 octobre 2026", timeLabel:"COUP D’ENVOI", matchTime:"18h00 (heure du Maroc)",
     stadiumLabel:"STADE", stadium:"Stade municipal de Berkane", matchFooter:"Ensemble derrière les Oranges.",
     matchNote:"Horaire indicatif d’après les calendriers sportifs consultés ; vérifiez les annonces officielles du club avant le match.",
-    footerText:"Orange dans le cœur. Berkane pour toujours.", fanSite:"Site de présentation non officiel"
+    footerText:"Orange dans le cœur. Berkane pour toujours.", fanSite:"Site de présentation non officiel",
+    profileLink:"Voir le profil", profileEyebrow:"FICHE JOUEUR", profileIntro:"Découvrez le profil du joueur.", profileBioTitle:"Présentation", profileBioText:"Cette fiche est prête à accueillir une biographie vérifiée : parcours, qualités sur le terrain et moments marquants. Les informations détaillées seront ajoutées lorsqu’elles auront été confirmées.", profileDetailsTitle:"Informations", profilePositionLabel:"Poste", profileNumberLabel:"Numéro affiché", profileNationalityLabel:"Nationalité", profileNationalityValue:"À compléter", profileDetailsPending:"Les statistiques et le parcours sont à compléter à partir de sources fiables.", backToSquad:"Retour à l’effectif"
   },
   en: {
     brandSub:"The orange passion", navClub:"The club", navHonours:"Honours", navSquad:"Starting XI", navMatch:"Next match",
@@ -41,7 +42,8 @@ window.RSB_TRANSLATIONS = {
     dateLabel:"DATE", matchDate:"Tuesday, 13 October 2026", timeLabel:"KICK-OFF", matchTime:"6:00 PM (Morocco time)",
     stadiumLabel:"STADIUM", stadium:"Berkane Municipal Stadium", matchFooter:"Together behind the Oranges.",
     matchNote:"Indicative kick-off time based on sports calendars consulted; check the club’s official announcements before the match.",
-    footerText:"Orange in our hearts. Berkane forever.", fanSite:"Unofficial presentation website"
+    footerText:"Orange in our hearts. Berkane forever.", fanSite:"Unofficial presentation website",
+    profileLink:"View profile", profileEyebrow:"PLAYER PROFILE", profileIntro:"Discover the player’s profile.", profileBioTitle:"About the player", profileBioText:"This page is ready for a verified biography, including career history, strengths on the pitch and key moments. Detailed information will be added once confirmed.", profileDetailsTitle:"Information", profilePositionLabel:"Position", profileNumberLabel:"Displayed number", profileNationalityLabel:"Nationality", profileNationalityValue:"To be completed", profileDetailsPending:"Statistics and career details should be completed using reliable sources.", backToSquad:"Back to the squad"
   },
   ar: {
     brandSub:"الشغف البرتقالي", navClub:"النادي", navHonours:"الألقاب", navSquad:"التشكيلة", navMatch:"المباراة القادمة",
@@ -63,6 +65,7 @@ window.RSB_TRANSLATIONS = {
     dateLabel:"التاريخ", matchDate:"الثلاثاء 13 أكتوبر 2026", timeLabel:"توقيت الانطلاق", matchTime:"18:00 بتوقيت المغرب",
     stadiumLabel:"الملعب", stadium:"الملعب البلدي ببركان", matchFooter:"جميعاً خلف البرتقاليين.",
     matchNote:"التوقيت تقريبي وفق جداول رياضية تم الاطلاع عليها؛ يرجى التأكد من بلاغات النادي الرسمية قبل المباراة.",
-    footerText:"البرتقالي في القلب. بركان دائماً.", fanSite:"موقع تعريفي غير رسمي"
+    footerText:"البرتقالي في القلب. بركان دائماً.", fanSite:"موقع تعريفي غير رسمي",
+    profileLink:"عرض الملف", profileEyebrow:"بطاقة اللاعب", profileIntro:"اكتشفوا الملف التعريفي للاعب.", profileBioTitle:"نبذة عن اللاعب", profileBioText:"هذه الصفحة مخصصة لإضافة نبذة موثوقة عن اللاعب، ومسيرته الكروية، ومميزاته داخل الملعب وأبرز محطاته. ستتم إضافة التفاصيل بعد التأكد منها.", profileDetailsTitle:"معلومات", profilePositionLabel:"المركز", profileNumberLabel:"الرقم المعروض", profileNationalityLabel:"الجنسية", profileNationalityValue:"يُستكمل لاحقاً", profileDetailsPending:"يجب استكمال الإحصائيات والمسيرة اعتماداً على مصادر موثوقة.", backToSquad:"العودة إلى التشكيلة"
   }
 };

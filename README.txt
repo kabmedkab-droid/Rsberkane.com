@@ -54,3 +54,11 @@ NOTES
 - Les années et le nombre de titres affichés suivent les informations fournies.
 - Le site est une présentation non officielle. Google Fonts nécessite une connexion
   Internet ; le site reste fonctionnel avec des polices de remplacement sans réseau.
+
+
+PLAYER PROFILE PAGES
+- Click a player in the starting XI to open a dedicated page in players/.
+- The player pages use the same orange/black design and FR/EN/AR language switcher.
+- Biography, nationality and statistics are deliberately marked for completion rather than guessed. Replace the placeholder text with verified player information before publishing.
+- Image paths support images stored in the images/ folder or directly in the repository root. Keep the exact image filenames (including upper/lowercase).
+- Upload the updated index.html, style.css, script.js, translations.js, and the entire players/ folder to the GitHub repository, then commit changes.
