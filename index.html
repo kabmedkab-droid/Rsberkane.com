@@ -1,227 +1,175 @@
-
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<!doctype html>
+<html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="RS Berkane supporters website">
-<meta name="theme-color" content="#f47721">
-<title>RS Berkane | Passion Orange</title>
-<style>
-:root{--orange:#f47721;--orange2:#ff963f;--bg:#101216;--panel:#191c22;--line:#2b3038;--white:#fff;--muted:#aeb4bd}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:95px}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,sans-serif;line-height:1.7}
-a{color:inherit;text-decoration:none}
-.container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#101216;border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:76px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:900}
-.crest{display:grid;place-items:center;width:46px;height:52px;background:linear-gradient(145deg,var(--orange2),var(--orange));color:#171717;font-weight:1000;clip-path:polygon(50% 0,100% 15%,92% 75%,50% 100%,8% 75%,0 15%)}
-.club-logo{width:48px;height:48px;object-fit:contain;flex-shrink:0}
-.brand small{display:block;color:var(--muted);font-weight:500}
-.nav-right{display:flex;align-items:center;justify-content:flex-end;gap:18px;flex-wrap:wrap}
-nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
-nav a:hover{color:var(--orange2)}
-.languages{display:flex;gap:6px}
-.lang-btn{cursor:pointer;border:1px solid #555b64;background:transparent;color:white;padding:7px 10px;border-radius:6px;font-weight:800}
-.lang-btn.active,.lang-btn:hover{background:var(--orange);border-color:var(--orange);color:#171717}
-.hero{position:relative;overflow:hidden;padding:85px 0 75px;background:radial-gradient(ellipse at 78% 28%,rgba(244,119,33,.25),transparent 35%),linear-gradient(120deg,#16191e,#101216 62%)}
-.hero:after{content:"RSB";position:absolute;right:-1%;bottom:-105px;font-size:clamp(170px,31vw,390px);font-weight:1000;color:#ffffff09;line-height:1;pointer-events:none}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;position:relative;z-index:1}
-.eyebrow{color:var(--orange2);text-transform:uppercase;font-size:12px;letter-spacing:2px;font-weight:800}
-h1{font-size:clamp(42px,6vw,76px);line-height:1.12;margin:16px 0}
-h1 span{color:var(--orange)}
-.hero p{color:#c1c6ce;max-width:570px;font-size:17px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:6px;background:var(--orange);color:#171717;font-weight:800;border:1px solid var(--orange);cursor:pointer}
-.btn:hover{background:var(--orange2)}
-.btn.secondary{background:transparent;color:white;border-color:#555b64}
-.hero-card{background:linear-gradient(150deg,#22262e,#15171c);border:1px solid #333944;border-radius:16px;padding:26px;text-align:center;box-shadow:0 20px 60px #0005}
-.hero-card .crest{width:108px;height:122px;font-size:28px;margin:0 auto 15px}
-.hero-card h2{margin:8px 0 0;font-size:24px}
-.hero-card small{color:var(--muted)}
-section{padding:65px 0}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}
-.section-head h2{font-size:clamp(27px,4vw,38px);margin:4px 0 0;line-height:1.2}
-.section-head p{color:var(--muted);margin:0;max-width:430px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:.2s}
-.card:hover{transform:translateY(-3px)}
-.card-body{padding:20px}
-.card h3{margin:5px 0 8px}
-.card p{color:#b8bec7;margin:0}
-.placeholder{height:155px;display:grid;place-items:center;background:linear-gradient(135deg,#2b3038,#1b1f25);color:var(--orange2);font-size:42px}
-.tag{font-size:11px;color:var(--orange2);font-weight:900;letter-spacing:1px;text-transform:uppercase}
-.alt-section{background:#15181d}
-.match-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.match-box{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
-.match-box h3{margin-top:0}
-.match{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 0;border-top:1px solid var(--line)}
-.team{font-weight:800}
-.vs{color:var(--orange2);font-size:12px;font-weight:900}
-.note{font-size:12px;color:var(--muted)}
-.squad{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.player{padding:20px 14px;text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:10px}
-.shirt{width:72px;height:78px;margin:0 auto 12px;display:grid;place-items:center;color:#111;background:linear-gradient(135deg,var(--orange2),var(--orange));clip-path:polygon(22% 0,39% 9%,61% 9%,78% 0,100% 20%,83% 39%,75% 29%,75% 100%,25% 100%,25% 29%,17% 39%,0 20%);font-weight:1000;font-size:22px}
-.player strong{display:block}
-.player span{color:var(--muted);font-size:13px}
-.club-text{max-width:760px;color:#c1c6ce;font-size:17px}
-.cta{padding:34px;border-radius:12px;background:linear-gradient(110deg,#f47721,#ff963f);color:#151515;display:flex;justify-content:space-between;align-items:center;gap:25px}
-.cta h2{margin:0;font-size:clamp(25px,4vw,36px);line-height:1.3}
-.cta p{margin:5px 0 0}
-.cta .btn{background:#151515;color:white;border-color:#151515}
-footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-body[dir="rtl"]{font-family:Tahoma,Arial,sans-serif}
-body[dir="rtl"] .hero:after{right:auto;left:-1%}
-body[dir="rtl"] .eyebrow,body[dir="rtl"] .tag{letter-spacing:0}
-@media(max-width:800px){
-.nav{padding:12px 0;align-items:flex-start;flex-direction:column}
-.nav-right{width:100%;justify-content:flex-start}
-nav{gap:12px}
-.hero{padding:55px 0}
-.hero-grid,.match-layout{grid-template-columns:1fr}
-.hero-card{max-width:360px;width:100%;margin:auto}
-.cards{grid-template-columns:1fr}
-.squad{grid-template-columns:repeat(2,1fr)}
-section{padding:48px 0}
-.section-head{align-items:flex-start;flex-direction:column}
-.cta{align-items:flex-start;flex-direction:column}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f36b16">
+  <meta name="description" content="Site de présentation de la Renaissance Sportive de Berkane : histoire, palmarès, effectif et prochain match.">
+  <title>RS Berkane — Le club</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<div class="container nav">
-<a class="brand" href="#accueil"><img class="club-logo" src="500px-LogoRSB2018.png" alt="RS Berkane logo"><span>RS BERKANE<small data-i18n="supporter">SITE DE SUPPORTERS</small></span></a>
-<div class="nav-right">
-<nav aria-label="Navigation principale">
-<a href="#actualites" data-i18n="navNews">Actualités</a>
-<a href="#equipe" data-i18n="navTeam">Équipe</a>
-<a href="#matchs" data-i18n="navMatches">Matchs</a>
-<a href="#club" data-i18n="navClub">Le club</a>
-<a href="#contact" data-i18n="navContact">Contact</a>
-</nav>
-<div class="languages">
-<button class="lang-btn active" type="button" data-lang="fr">FR</button>
-<button class="lang-btn" type="button" data-lang="ar">العربية</button>
-</div>
-</div>
-</div>
-</header>
-<main>
-<section class="hero" id="accueil">
-<div class="container hero-grid">
-<div>
-<div class="eyebrow" data-i18n="eyebrow">Fierté • Passion • Berkane</div>
-<h1 data-i18n="heroTitle">ENSEMBLE,<br><span>PLUS FORTS.</span></h1>
-<p data-i18n="heroText">Bienvenue dans l’espace des supporters de la RS Berkane. Retrouvez les actualités, l’équipe et les prochains rendez-vous.</p>
-<div class="actions"><a class="btn" href="#matchs" data-i18n="seeMatches">Voir les matchs</a><a class="btn secondary" href="#equipe" data-i18n="seeTeam">Découvrir l’équipe</a></div>
-</div>
-<div class="hero-card"><div class="crest">RSB</div><div class="eyebrow" data-i18n="pride">Notre passion • Notre fierté</div><h2>RS BERKANE</h2><small data-i18n="fanSite">Site de supporters indépendant</small></div>
-</div>
-</section>
-<section id="actualites">
-<div class="container">
-<div class="section-head"><div><div class="eyebrow" data-i18n="headline">À LA UNE</div><h2 data-i18n="newsTitle">Actualités du club</h2></div><p data-i18n="newsIntro">Retrouvez ici les dernières nouvelles et les moments forts de la RS Berkane.</p></div>
-<div class="cards">
-<article class="card"><div class="placeholder">⚽</div><div class="card-body"><div class="tag" data-i18n="community">Communauté</div><h3 data-i18n="news1Title">Bienvenue aux supporters</h3><p data-i18n="news1Text">Un espace pour partager notre passion du football et suivre la vie du club.</p></div></article>
-<article class="card"><div class="placeholder">🏆</div><div class="card-body"><div class="tag" data-i18n="competition">Compétition</div><h3 data-i18n="news2Title">Suivez la saison</h3><p data-i18n="news2Text">Consultez les résultats et les prochaines rencontres dès que les informations sont confirmées.</p></div></article>
-<article class="card"><div class="placeholder">🧡</div><div class="card-body"><div class="tag" data-i18n="orangeFamily">Famille orange</div><h3 data-i18n="news3Title">Une passion qui nous unit</h3><p data-i18n="news3Text">Partageons ensemble les émotions et les meilleurs moments de notre équipe.</p></div></article>
-</div>
-</div>
-</section>
-<section id="matchs" class="alt-section">
-<div class="container">
-<div class="section-head"><div><div class="eyebrow" data-i18n="calendar">CALENDRIER</div><h2 data-i18n="matchesTitle">Matchs et résultats</h2></div><p data-i18n="matchIntro">Les détails des rencontres seront ajoutés après confirmation des informations.</p></div>
-<div class="match-layout">
-<div class="match-box"><h3 data-i18n="nextMatch">Prochain match</h3><div class="match"><div class="team">RS Berkane</div><div class="vs">VS</div><div class="team" data-i18n="opponent">Adversaire</div></div><p class="note" data-i18n="matchDate">Date, heure et stade : à confirmer</p></div>
-<div class="match-box"><h3 data-i18n="lastResult">Dernier résultat</h3><div class="match"><div class="team">RS Berkane</div><div class="vs">— : —</div><div class="team" data-i18n="opponent">Adversaire</div></div><p class="note" data-i18n="resultNote">Résultat à ajouter après le match.</p></div>
-</div>
-</div>
-</section>
-<section id="equipe">
-<div class="container">
-<div class="section-head"><div><div class="eyebrow" data-i18n="squadLabel">EFFECTIF</div><h2 data-i18n="teamTitle">L’équipe</h2></div><p data-i18n="teamIntro">Les fiches ci-dessous sont des modèles, pas une liste officielle de joueurs.</p></div>
-<div class="squad">
-<div class="player"><div class="shirt">01</div><strong data-i18n="goalkeeper">Gardien</strong><span data-i18n="playerPlaceholder">Joueur à ajouter</span></div>
-<div class="player"><div class="shirt">04</div><strong data-i18n="defender">Défenseur</strong><span data-i18n="playerPlaceholder">Joueur à ajouter</span></div>
-<div class="player"><div class="shirt">08</div><strong data-i18n="midfielder">Milieu</strong><span data-i18n="playerPlaceholder">Joueur à ajouter</span></div>
-<div class="player"><div class="shirt">09</div><strong data-i18n="forward">Attaquant</strong><span data-i18n="playerPlaceholder">Joueur à ajouter</span></div>
-</div>
-</div>
-</section>
-<section id="club" class="alt-section">
-<div class="container">
-<div class="section-head"><div><div class="eyebrow" data-i18n="identity">NOTRE IDENTITÉ</div><h2 data-i18n="clubTitle">La passion de Berkane</h2></div></div>
-<p class="club-text" data-i18n="clubText">Cette section pourra présenter l’histoire du club, ses valeurs, son stade et son centre de formation. Ajoutez uniquement des informations vérifiées et des images que vous êtes autorisé à utiliser.</p>
-</div>
-</section>
-<section id="contact">
-<div class="container">
-<div class="cta"><div><h2 data-i18n="ctaTitle">Vivez la passion RS Berkane.</h2><p data-i18n="ctaText">Unis par l’orange, proches de notre équipe.</p></div><a class="btn" href="#accueil" data-i18n="backTop">Retour en haut</a></div>
-<p class="note" style="margin-top:12px" data-i18n="disclaimer">Site de supporters indépendant, non affilié officiellement au club. Les informations doivent être vérifiées avant publication.</p>
-</div>
-</section>
-</main>
-<footer><div class="container foot"><span>© <span id="year"></span> RS Berkane — <span data-i18n="footerText">Site de supporters indépendant.</span></span><span data-i18n="madeWith">Fait avec passion 🧡</span></div></footer>
-<script>
-const translations = {
-fr:{
-supporter:"SITE DE SUPPORTERS",navNews:"Actualités",navTeam:"Équipe",navMatches:"Matchs",navClub:"Le club",navContact:"Contact",
-eyebrow:"Fierté • Passion • Berkane",heroTitle:"ENSEMBLE,<br><span>PLUS FORTS.</span>",heroText:"Bienvenue dans l’espace des supporters de la RS Berkane. Retrouvez les actualités, l’équipe et les prochains rendez-vous.",
-seeMatches:"Voir les matchs",seeTeam:"Découvrir l’équipe",pride:"Notre passion • Notre fierté",fanSite:"Site de supporters indépendant",
-headline:"À LA UNE",newsTitle:"Actualités du club",newsIntro:"Retrouvez ici les dernières nouvelles et les moments forts de la RS Berkane.",
-community:"Communauté",news1Title:"Bienvenue aux supporters",news1Text:"Un espace pour partager notre passion du football et suivre la vie du club.",
-competition:"Compétition",news2Title:"Suivez la saison",news2Text:"Consultez les résultats et les prochaines rencontres dès que les informations sont confirmées.",
-orangeFamily:"Famille orange",news3Title:"Une passion qui nous unit",news3Text:"Partageons ensemble les émotions et les meilleurs moments de notre équipe.",
-calendar:"CALENDRIER",matchesTitle:"Matchs et résultats",matchIntro:"Les détails des rencontres seront ajoutés après confirmation des informations.",
-nextMatch:"Prochain match",opponent:"Adversaire",matchDate:"Date, heure et stade : à confirmer",lastResult:"Dernier résultat",resultNote:"Résultat à ajouter après le match.",
-squadLabel:"EFFECTIF",teamTitle:"L’équipe",teamIntro:"Les fiches ci-dessous sont des modèles, pas une liste officielle de joueurs.",
-goalkeeper:"Gardien",defender:"Défenseur",midfielder:"Milieu",forward:"Attaquant",playerPlaceholder:"Joueur à ajouter",
-identity:"NOTRE IDENTITÉ",clubTitle:"La passion de Berkane",clubText:"Cette section pourra présenter l’histoire du club, ses valeurs, son stade et son centre de formation. Ajoutez uniquement des informations vérifiées et des images que vous êtes autorisé à utiliser.",
-ctaTitle:"Vivez la passion RS Berkane.",ctaText:"Unis par l’orange, proches de notre équipe.",backTop:"Retour en haut",
-disclaimer:"Site de supporters indépendant, non affilié officiellement au club. Les informations doivent être vérifiées avant publication.",footerText:"Site de supporters indépendant.",madeWith:"Fait avec passion 🧡"
-},
-ar:{
-supporter:"موقع خاص بالمشجعين",navNews:"الأخبار",navTeam:"الفريق",navMatches:"المباريات",navClub:"النادي",navContact:"تواصل معنا",
-eyebrow:"الفخر • الشغف • بركان",heroTitle:"معاً،<br><span>أقوى دائماً.</span>",heroText:"مرحباً بكم في فضاء مشجعي نهضة بركان. تابعوا آخر الأخبار ومعلومات الفريق والمباريات القادمة.",
-seeMatches:"مواعيد المباريات",seeTeam:"اكتشف الفريق",pride:"شغفنا • فخرنا",fanSite:"موقع مستقل للمشجعين",
-headline:"آخر المستجدات",newsTitle:"أخبار النادي",newsIntro:"تابعوا هنا آخر الأخبار وأبرز لحظات نهضة بركان.",
-community:"المشجعون",news1Title:"مرحباً بمشجعي الفريق",news1Text:"فضاء يجمعنا حول حب كرة القدم ومتابعة أخبار النادي.",
-competition:"المنافسات",news2Title:"تابعوا الموسم",news2Text:"اطلعوا على النتائج والمباريات القادمة بعد التأكد من المعلومات.",
-orangeFamily:"العائلة البرتقالية",news3Title:"شغف يجمعنا",news3Text:"لنتقاسم معاً لحظات الفرح وأبرز أحداث فريقنا.",
-calendar:"البرنامج",matchesTitle:"المباريات والنتائج",matchIntro:"ستتم إضافة تفاصيل المباريات بعد التأكد من المعلومات.",
-nextMatch:"المباراة القادمة",opponent:"الفريق المنافس",matchDate:"التاريخ والتوقيت والملعب: سيتم التأكيد لاحقاً",lastResult:"آخر نتيجة",resultNote:"ستتم إضافة النتيجة بعد نهاية المباراة.",
-squadLabel:"تشكيلة الفريق",teamTitle:"الفريق",teamIntro:"البطاقات التالية نماذج تجريبية وليست لائحة رسمية للاعبين.",
-goalkeeper:"حارس المرمى",defender:"مدافع",midfielder:"لاعب وسط",forward:"مهاجم",playerPlaceholder:"سيتم إضافة اللاعب",
-identity:"هويتنا",clubTitle:"شغف بركان",clubText:"يمكن لهذا القسم أن يقدم تاريخ النادي وقيمه وملعبه ومركز التكوين. يرجى إضافة معلومات مؤكدة وصور مسموح باستخدامها فقط.",
-ctaTitle:"عِش شغف نهضة بركان.",ctaText:"يجمعنا اللون البرتقالي ويقربنا من فريقنا.",backTop:"العودة إلى الأعلى",
-disclaimer:"هذا موقع مستقل للمشجعين وغير تابع رسمياً للنادي. يرجى التأكد من المعلومات قبل نشرها.",footerText:"موقع مستقل للمشجعين.",madeWith:"صُنع بكل شغف 🧡"
-}
-};
-</script>
-<script>
-function setLanguage(lang){
-const dict=translations[lang]||translations.fr;
-document.documentElement.lang=lang;
-document.documentElement.dir=lang==="ar"?"rtl":"ltr";
-document.body.dir=lang==="ar"?"rtl":"ltr";
-document.querySelectorAll("[data-i18n]").forEach(el=>{
-const key=el.dataset.i18n;
-if(Object.prototype.hasOwnProperty.call(dict,key)) el.innerHTML=dict[key];
-});
-document.querySelectorAll("[data-lang]").forEach(btn=>{
-const active=btn.dataset.lang===lang;
-btn.classList.toggle("active",active);
-btn.setAttribute("aria-pressed",String(active));
-});
-}
-document.querySelectorAll("[data-lang]").forEach(btn=>{
-btn.addEventListener("click",()=>setLanguage(btn.dataset.lang));
-});
-document.getElementById("year").textContent=new Date().getFullYear();
-</script>
+  <div class="top-strip"></div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="RS Berkane accueil">
+      <img src="images/rsb.png" alt="Logo de la Renaissance Sportive de Berkane" class="brand-logo" onerror="this.classList.add('missing-image')">
+      <span><strong>RS BERKANE</strong><small data-i18n="brandSub">La passion orange</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#club" data-i18n="navClub">Le club</a>
+      <a href="#palmares" data-i18n="navHonours">Palmarès</a>
+      <a href="#effectif" data-i18n="navSquad">Onze de départ</a>
+      <a href="#match" data-i18n="navMatch">Prochain match</a>
+      <div class="language-switch" aria-label="Choisir la langue">
+        <button data-lang="fr" class="lang-btn active">FR</button>
+        <button data-lang="en" class="lang-btn">EN</button>
+        <button data-lang="ar" class="lang-btn">ع</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="heroEyebrow">UN CLUB · UNE VILLE · UNE PASSION</span>
+        <h1 data-i18n="heroTitle">Fiers d’être<br><em>orange et noir.</em></h1>
+        <p data-i18n="heroText">Bienvenue dans l’univers de la Renaissance Sportive de Berkane, un club qui porte haut les couleurs de l’Oriental.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#palmares" data-i18n="discoverHonours">Découvrir le palmarès</a>
+          <a class="btn btn-ghost" href="#match" data-i18n="nextMatchBtn">Prochain match</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span class="badge-label" data-i18n="badgeClub">CLUB</span>
+        <strong>RSB</strong>
+        <span class="badge-line"></span>
+        <small data-i18n="badgeCity">BERKANE · MAROC</small>
+      </div>
+      <div class="hero-bottomline"><span></span><span data-i18n="heroFooter">L’ORIENTAL EST ORANGE</span><span></span></div>
+    </section>
+
+    <section class="section club-section" id="club">
+      <div class="section-heading">
+        <span class="eyebrow" data-i18n="clubEyebrow">NOTRE IDENTITÉ</span>
+        <h2 data-i18n="clubTitle">Plus qu’un club.<br><em>Une fierté.</em></h2>
+      </div>
+      <div class="club-grid">
+        <div class="club-copy">
+          <p data-i18n="clubText">La Renaissance Sportive de Berkane, connue sous le nom de RS Berkane ou RSB, représente la ville de Berkane et toute la région de l’Oriental. Ses couleurs orange et noir sont devenues le symbole d’une passion partagée par ses supporters.</p>
+          <p data-i18n="clubText2">Au fil des saisons, le club s’est affirmé sur la scène nationale et africaine grâce à son ambition, à l’engagement de ses joueurs et au soutien fidèle de ses supporters.</p>
+          <div class="club-stats">
+            <div><strong>3</strong><span data-i18n="statConfed">Coupes de la Confédération</span></div>
+            <div><strong>3</strong><span data-i18n="statThrone">Coupes du Trône</span></div>
+            <div><strong>1</strong><span data-i18n="statSuper">Supercoupe d’Afrique</span></div>
+          </div>
+        </div>
+        <div class="club-emblem-card">
+          <div class="emblem-ring"><img src="images/rsb.png" alt="Emblème RSB" onerror="this.classList.add('missing-image')"></div>
+          <span data-i18n="emblemCaption">RENAISSANCE SPORTIVE DE BERKANE</span>
+          <small>EST. 1938</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section honours-section" id="palmares">
+      <div class="section-heading centered">
+        <span class="eyebrow" data-i18n="honoursEyebrow">NOS GRANDES VICTOIRES</span>
+        <h2 data-i18n="honoursTitle">Un palmarès <em>historique.</em></h2>
+        <p data-i18n="honoursIntro">Des trophées qui racontent l’ambition, le travail et la fierté de tout un peuple.</p>
+      </div>
+      <div class="trophy-grid">
+        <article class="trophy-card">
+          <div class="trophy-image"><img src="images/confed.jpeg" alt="Trophées de la Coupe de la Confédération CAF" onerror="this.classList.add('missing-image')"><span class="trophy-count">03</span></div>
+          <div class="trophy-info"><span class="trophy-kicker" data-i18n="continental">AFRIQUE</span><h3 data-i18n="confedTitle">Coupe de la Confédération CAF</h3><p>2020 · 2022 · 2025</p></div>
+        </article>
+        <article class="trophy-card">
+          <div class="trophy-image"><img src="images/Sca.jpeg" alt="Trophée de la Supercoupe d’Afrique" onerror="this.classList.add('missing-image')"><span class="trophy-count">01</span></div>
+          <div class="trophy-info"><span class="trophy-kicker" data-i18n="continental">AFRIQUE</span><h3 data-i18n="superTitle">Supercoupe d’Afrique</h3><p>2022</p></div>
+        </article>
+        <article class="trophy-card">
+          <div class="trophy-image"><img src="images/cdt.jpeg" alt="Trophées de la Coupe du Trône du Maroc" onerror="this.classList.add('missing-image')"><span class="trophy-count">03</span></div>
+          <div class="trophy-info"><span class="trophy-kicker" data-i18n="national">MAROC</span><h3 data-i18n="throneTitle">Coupe du Trône</h3><p>2018 · 2021 · 2022</p></div>
+        </article>
+        <article class="trophy-card">
+          <div class="trophy-image"><img src="images/botola.jpeg" alt="Trophée de la Botola Pro" onerror="this.classList.add('missing-image')"><span class="trophy-count">01</span></div>
+          <div class="trophy-info"><span class="trophy-kicker" data-i18n="national">MAROC</span><h3 data-i18n="botolaTitle">Botola Pro</h3><p>2025</p></div>
+        </article>
+      </div>
+      <p class="small-note" data-i18n="honoursNote">Les années et le nombre de titres sont présentés selon les informations fournies pour ce site.</p>
+    </section>
+
+    <section class="section squad-section" id="effectif">
+      <div class="section-heading centered">
+        <span class="eyebrow" data-i18n="squadEyebrow">LES HOMMES DU TERRAIN</span>
+        <h2 data-i18n="squadTitle">Notre onze <em>de départ.</em></h2>
+        <p data-i18n="squadIntro">Une composition illustrative en 4-2-4 avec les joueurs et photos fournis.</p>
+      </div>
+      <div class="pitch-wrap">
+        <div class="pitch-label"><span>RSB</span><span data-i18n="formation">FORMATION · 1–4–2–4</span></div>
+        <div class="pitch">
+          <div class="pitch-line halfway"></div><div class="center-circle"></div><div class="penalty-box top-box"></div><div class="penalty-box bottom-box"></div>
+          <div class="player-row attackers">
+            <div class="player"><div class="player-photo"><img src="images/chouiar.jpeg" alt="Chouiar" onerror="this.classList.add('missing-image')"><span>11</span></div><strong>Chouiar</strong><small data-i18n="forward">Attaquant</small></div>
+            <div class="player"><div class="player-photo"><img src="images/essahel.jpeg" alt="Essahel" onerror="this.classList.add('missing-image')"><span>9</span></div><strong>Essahel</strong><small data-i18n="forward">Attaquant</small></div>
+            <div class="player"><div class="player-photo"><img src="images/mendes.jpeg" alt="Mendes" onerror="this.classList.add('missing-image')"><span>7</span></div><strong>Mendes</strong><small data-i18n="forward">Attaquant</small></div>
+            <div class="player"><div class="player-photo"><img src="images/mlioui.jpeg" alt="Mlioui" onerror="this.classList.add('missing-image')"><span>10</span></div><strong>Mlioui</strong><small data-i18n="forward">Attaquant</small></div>
+          </div>
+          <div class="player-row midfielders">
+            <div class="player"><div class="player-photo"><img src="images/labhiri.jpeg" alt="Labhiri" onerror="this.classList.add('missing-image')"><span>8</span></div><strong>Labhiri</strong><small data-i18n="midfielder">Milieu</small></div>
+            <div class="player"><div class="player-photo"><img src="images/bennasser.jpeg" alt="Bennasser" onerror="this.classList.add('missing-image')"><span>6</span></div><strong>Bennasser</strong><small data-i18n="midfielder">Milieu</small></div>
+          </div>
+          <div class="player-row defenders">
+            <div class="player"><div class="player-photo"><img src="images/hamza.jpeg" alt="Hamza" onerror="this.classList.add('missing-image')"><span>2</span></div><strong>Hamza</strong><small data-i18n="defender">Défenseur</small></div>
+            <div class="player"><div class="player-photo"><img src="images/haddadi.jpeg" alt="Haddadi" onerror="this.classList.add('missing-image')"><span>3</span></div><strong>Haddadi</strong><small data-i18n="defender">Défenseur</small></div>
+            <div class="player"><div class="player-photo"><img src="images/kandous.jpeg" alt="Kandous" onerror="this.classList.add('missing-image')"><span>4</span></div><strong>Kandous</strong><small data-i18n="defender">Défenseur</small></div>
+            <div class="player"><div class="player-photo"><img src="images/harkas.jpeg" alt="Harkas" onerror="this.classList.add('missing-image')"><span>5</span></div><strong>Harkas</strong><small data-i18n="defender">Défenseur</small></div>
+          </div>
+          <div class="player-row goalkeeper">
+            <div class="player"><div class="player-photo"><img src="images/mounir.jpeg" alt="Mounir" onerror="this.classList.add('missing-image')"><span>1</span></div><strong>Mounir</strong><small data-i18n="goalkeeper">Gardien</small></div>
+          </div>
+        </div>
+      </div>
+      <p class="small-note" data-i18n="squadNote">Les noms, numéros et la disposition sont illustratifs et peuvent être modifiés dans index.html.</p>
+    </section>
+
+    <section class="match-section" id="match">
+      <div class="match-bg-mark">RSB</div>
+      <div class="section-heading centered">
+        <span class="eyebrow" data-i18n="matchEyebrow">À VOS AGENDAS</span>
+        <h2 data-i18n="matchTitle">Le prochain <em>rendez-vous.</em></h2>
+      </div>
+      <div class="match-card">
+        <div class="competition" data-i18n="competition">BOTOLA PRO · JOURNÉE 4</div>
+        <div class="teams">
+          <div class="team">
+            <img src="images/rsb.png" alt="RS Berkane" onerror="this.classList.add('missing-image')">
+            <strong>RS Berkane</strong><small data-i18n="home">À domicile</small>
+          </div>
+          <div class="match-vs"><span>VS</span><small data-i18n="match">MATCH</small></div>
+          <div class="team">
+            <img src="images/zemmamra.jpeg" alt="Renaissance Zemamra" onerror="this.classList.add('missing-image')">
+            <strong data-i18n="zemmamra">Renaissance Zemamra</strong><small data-i18n="away">À l’extérieur</small>
+          </div>
+        </div>
+        <div class="match-details">
+          <div><span class="detail-icon">▦</span><span><small data-i18n="dateLabel">DATE</small><strong data-i18n="matchDate">Mardi 13 octobre 2026</strong></span></div>
+          <div><span class="detail-icon">◷</span><span><small data-i18n="timeLabel">COUP D’ENVOI</small><strong data-i18n="matchTime">18h00 (heure du Maroc)</strong></span></div>
+          <div><span class="detail-icon">⌖</span><span><small data-i18n="stadiumLabel">STADE</small><strong data-i18n="stadium">Stade municipal de Berkane</strong></span></div>
+        </div>
+        <div class="match-footer"><span class="live-dot"></span><span data-i18n="matchFooter">Ensemble derrière les Oranges.</span></div>
+      </div>
+      <p class="small-note match-note" data-i18n="matchNote">Horaire indicatif d’après les calendriers sportifs consultés ; vérifiez les annonces officielles du club avant le match.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#accueil"><img src="images/rsb.png" alt="" onerror="this.classList.add('missing-image')"><strong>RS BERKANE</strong></a>
+    <p data-i18n="footerText">Orange dans le cœur. Berkane pour toujours.</p>
+    <span>© <span id="year"></span> RS Berkane · <span data-i18n="fanSite">Site de présentation non officiel</span></span>
+  </footer>
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

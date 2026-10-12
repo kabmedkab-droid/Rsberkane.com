@@ -1,28 +1,56 @@
-RS BERKANE — FREE GITHUB PAGES WEBSITE
+RS BERKANE — SITE WEB MULTILINGUE
+=================================
 
-Files:
-- index.html: the responsive website
-- CNAME: your custom domain (rsberkane.com)
+Contenu :
+- index.html       Structure des pages et contenu
+- style.css        Design responsive orange/noir
+- script.js        Sélecteur de langue et menu mobile
+- translations.js  Textes en français, anglais et arabe
+- images/          Placez ici les photos du club, des joueurs et des trophées
 
-Before publishing:
-1. Replace placeholder news, fixtures, results, player names and contact email.
-2. Use only club logos/photos you are allowed to publish.
-3. Keep this repository public to use GitHub Pages on GitHub Free.
+INSTALLATION DES IMAGES
+-----------------------
+Copiez vos images dans le dossier images/ en gardant exactement ces noms :
 
-Publishing:
-1. Create a GitHub repository named rsberkane-website (or another name).
-2. Upload index.html and CNAME to the repository root.
-3. Go to Settings > Pages.
-4. Under Build and deployment, select Deploy from a branch, branch main, folder /(root), Save.
-5. In Settings > Pages > Custom domain, enter rsberkane.com and save.
-6. In Namecheap > Domain List > Manage rsberkane.com > Advanced DNS, add:
-   A | Host @ | Value 185.199.108.153
-   A | Host @ | Value 185.199.109.153
-   A | Host @ | Value 185.199.110.153
-   A | Host @ | Value 185.199.111.153
-   CNAME | Host www | Value YOUR-GITHUB-USERNAME.github.io
-   Replace YOUR-GITHUB-USERNAME with your actual GitHub username.
-7. Remove conflicting A/AAAA/CNAME records for @ or www only if they point somewhere else and you no longer need them.
-8. After DNS settles, return to Settings > Pages and enable Enforce HTTPS when available.
+Logo et clubs :
+  rsb.png
+  zemmamra.jpeg
 
-DNS propagation may take up to 24 hours. Do not share your Namecheap password with anyone.
+Joueurs :
+  mounir.jpeg
+  hamza.jpeg
+  haddadi.jpeg
+  kandous.jpeg
+  harkas.jpeg
+  labhiri.jpeg
+  bennasser.jpeg
+  chouiar.jpeg
+  essahel.jpeg
+  mendes.jpeg
+  mlioui.jpeg
+
+Palmarès :
+  confed.jpeg   (Coupes de la Confédération : 2020, 2022, 2025)
+  Sca.jpeg      (Supercoupe d’Afrique : 2022)
+  cdt.jpeg      (Coupes du Trône : 2018, 2021, 2022)
+  botola.jpeg   (Botola Pro : 2025)
+
+OUVRIR LE SITE
+--------------
+1. Décompressez le fichier ZIP.
+2. Ouvrez le dossier rsb-site.
+3. Double-cliquez sur index.html.
+   Pour publier le site, envoyez tous les fichiers et le dossier images/
+   sur votre hébergement web en conservant la même structure.
+
+NOTES
+-----
+- Les images ne sont pas intégrées au ZIP : ajoutez vos fichiers dans images/.
+- Le onze de départ, les numéros et les postes sont illustratifs.
+- Le match RSB - Renaissance Zemamra est affiché au mardi 13 octobre 2026 à 18h00
+  (heure du Maroc), au stade municipal de Berkane, selon les calendriers sportifs
+  consultés lors de la préparation. Vérifiez les annonces officielles du club
+  avant de publier, car les horaires peuvent être modifiés.
+- Les années et le nombre de titres affichés suivent les informations fournies.
+- Le site est une présentation non officielle. Google Fonts nécessite une connexion
+  Internet ; le site reste fonctionnel avec des polices de remplacement sans réseau.
