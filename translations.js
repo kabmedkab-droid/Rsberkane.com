@@ -37,7 +37,7 @@ window.RSB_TRANSLATIONS = {
     squadEyebrow:"THE PLAYERS", squadTitle:"Our <em>starting XI.</em>", squadIntro:"An illustrative 4-2-4 line-up using the players and photos provided.",
     formation:"FORMATION · 2–4–4", forward:"Forward", midfielder:"Midfielder", defender:"Defender", goalkeeper:"Goalkeeper",
     squadNote:"Player names, numbers and positions are illustrative and can be edited in index.html.",
-    matchEyebrow:"SAVE THE DATE", matchTitle:"The next <em>fixture.</em>", competition:"BOTOLA PRO · MATCHDAY 4",
+    matchEyebrow:"SAVE THE DATE", matchTitle:"The next <em>fixture.</em>", competition:"Champions League Africaine · MATCHDAY 1",
     home:"Home", away:"Away", zemmamra:"Colombe FC", match:"MATCH",
     dateLabel:"DATE", matchDate:"Tuesday, 28 Novembre 2026", timeLabel:"KICK-OFF", matchTime:"6:00 PM (Morocco time)",
     stadiumLabel:"STADIUM", stadium:"Berkane Municipal Stadium", matchFooter:"Together behind the Oranges.",
