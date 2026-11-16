@@ -61,7 +61,7 @@ window.RSB_TRANSLATIONS = {
     formation:"الخطة · 1–4–2–4", forward:"مهاجم", midfielder:"وسط الميدان", defender:"مدافع", goalkeeper:"حارس المرمى",
     squadNote:"",
     matchEyebrow:"احفظوا الموعد", matchTitle:"الموعد <em>القادم.</em>", competition:"البطولة الاحترافية · الجولة الرابعة",
-    home:"داخل الميدان", away:"خارج الميدان", zemmamra:"نهضة الزمامرة", match:"مباراة",
+    home:"داخل الميدان", away:"خارج الميدان", zemmamra:"كولومب الكميروني", match:"مباراة",
     dateLabel:"التاريخ", matchDate:"الثلاثاء 13 أكتوبر 2026", timeLabel:"توقيت الانطلاق", matchTime:"18:00 بتوقيت المغرب",
     stadiumLabel:"الملعب", stadium:"الملعب البلدي ببركان", matchFooter:"جميعاً خلف البرتقاليين.",
     matchNote:"التوقيت تقريبي وفق جداول رياضية تم الاطلاع عليها؛ يرجى التأكد من بلاغات النادي الرسمية قبل المباراة.",
