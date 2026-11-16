@@ -14,7 +14,7 @@ Copiez vos images dans le dossier images/ en gardant exactement ces noms :
 
 Logo et clubs :
   rsb.png
-  zemmamra.jpeg
+  Colombe_Sportive_logo.png
 
 Joueurs :
   mounir.jpeg
